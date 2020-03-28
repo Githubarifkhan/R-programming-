@@ -1,0 +1,469 @@
+a=3
+a
+
+z =11:15
+
+z
+
+data =1:1000
+data
+
+data[200]
+
+x<-1:5
+
+y<-4:8
+
+
+valueadd <-sum(x,y,z)
+
+valueadd
+
+x+y+z
+
+#vectors and matrics--
+
+
+sudhanshu1= c(2.3, 5.6, 44.5, 5)
+sudhanshu1
+
+str(sudhanshu1)
+sudhanshu= c(2,5,44,"a",5)
+
+sudhanshu
+
+str(sudhanshu)
+
+x <- c(2,3,5,1, 4,4)
+x
+
+
+#histogram
+
+y
+hist(y)
+
+#make a boxplot of x data
+
+x <- c(2,4,4,6,6, 5,5,7,3,7,3, 8,9, 7,9, 6,4,3,4, 4,6, 2,2 ,1,2,4,6,6,10)
+length(x)
+boxplot(x)
+plot(x,y)
+#make side by side bosplot of x and y data
+boxplot(y, x)
+summary(x)
+summary(y)
+
+y=1:29
+length(y)
+length(x)
+plot(x,y)
+
+install.packages("ggplot2")
+installed.packages()
+install.packages()
+installed.packages("tidyr")
+install.packages("downloader")
+library(downloader)
+
+######################################################################
+
+
+data=reads.csv("user/apple1/Training/Onedriive")
+
+titanic =read.csv("F:\d drive\titanic.csv")
+
+##########################creating bins in the data####
+mtcars
+mtcars =mtcars
+?summary
+
+summary(mtcars)
+mtcars
+mtcars$gear
+
+?cut
+mpg<-mtcars$mpg
+mpg
+summary(mpg)
+cut(mpg,  4)
+#List#########################naming bins##########
+cut(mpg, 4, labels = c("very low", "low", "average","high"))
+mtcars$bins<-cut(mpg, 4, labels = c("D", "C", "B","A"))
+mtcars
+Titanic
+
+(1-.6+0-0.5+0-0.1)^2
+(100-0.8+250-0-15+0.05-50)
+
+#logical operators
+
+x <-1:5  # x is a row vector = [1,2,3,4,5]
+x
+var1 <-  (x<4)
+var1
+test <-  (x==3)  #test is a row or (loghical =)
+test#  =[false FALSE TRUE  FALSE FALSE]
+
+test2= (x>1 & x<4)#[FALSE TRUE TRUE ](log and)
+test2
+test3=(x<4 |x ==2)# [false FALSE TRUE  FALSE FALSE]
+test3
+test9  <-(x!=4)  # test is a row vector(logical not=)
+test9#= [false FALSE TRUE  FALSE FALSE]
+test5# testing whether the entry is a2   or a4  
+
+B  = matrix(c(2,  4,  3, 1,  5, 7),  nrow =6,  ncol=1)
+B
+
+#vectors and matrics--
+sudhanshu1=c(2.3, 5.6, 44, 5,5)
+sudhanshu1
+
+str(sudhanshu1)
+sudhanshu  =c(2, 5,  444,"a", 5)
+sudhanshu
+str(sudhanshu)
+
+x  <-  c(2,3, 5, 1, 4,4)# create a row numbers with those a nimber and then call the vector x
+x
+max(x)    #sums the element of vector x
+sum(x)   # sum the elements of vector x
+mean(x)  # find the mean of vector x
+sd(x)     #find standard deviation of vector x
+median(x) # find the median of x
+range(x)  # range of x
+var(x)    #variance
+
+sqrt(x)   # funds square root of every element of x
+x^2
+
+?seq
+seq(1, 10)  #  makes a vector 10 long , from 1 to 10, byls
+seq(1, 10, 2)  #makes  a vector from 1 to 10,
+  #starting  with 1, then skipping 1 ending up with only odds from 1  to   10
+seq(1:10)  #same as seq(1,10)
+seq(1,10, by=2)  #same as seq(1, 10, 2)
+
+
+y<-  c(1:7)   # create a row vector with elements 1 through 7
+y
+z  <- 1:7  #same as y--use  when you increment by only 1#
+z
+w <-c(1:12,0,-6) #use the c (when you increament by 1 followednby more)
+w
+#numbers not in sequence
+
+training   = seq(2018,  24765)
+training
+
+
+
+w
+x  <-c(-5, 0,7,  -6,14,27)  #  data vector x
+x
+
+x[1]                       #print first element of x
+length(x)
+
+x[length(x)]          #prints last element of x
+
+x[3]                  #the ith entry  if 1<=n,  NA  if i>n,
+
+
+x[c(2, 6)]  #the second and 6th entries
+
+
+#hist(y)
+ #make a boxplot of  x data
+
+x  <-  c(2, 4, 6, 6, 5, 5,7, 3,8,9,7,9,6,4,3,4,4,6,2,2,1,2,4,6,6,10)
+boxplot(x)
+# make side by side boxplot of x and y data
+boxplot(y, x)
+summary(x)
+
+#Add to vectors
+a=1:5
+
+a
+b=6:10
+b
+c=a+b
+c
+v<-c(2,5,6)
+t<-c(8,3,4)
+print(v+t)
+
+print("v+t")
+
+#subtract
+
+print(v-t)
+
+#multiplies
+
+print(v*t)
+
+print(v/t)
+
+print("sorry the file is not available")
+
+#Give the remainder of the vector with the second
+v
+t
+
+print(v%%t)
+
+print(t%%v)
+
+#the result of division of first vector with second quotient
+
+print(v%/%t)
+
+#The first vector raised to the exponemt of second vector
+
+print(v^t)
+
+#vector manipulation 
+#create two vectors
+
+v1<- c(3,8,4,5,0,11)
+v2 <-c(4,1,0,8,1,2)
+
+#vector addition 
+add.result <-v1+v2
+print(add.result)
+
+#vector sub
+sub.result <-v1-v2
+print(sub.result)
+
+#vector multiplication
+multi.result <-v1*v2
+print(multi.result)
+
+#vector division
+divi.result <-v1/v2
+print(divi.result)
+
+
+#vector element recycling
+#if we apply arithmetic operations to two vectors of unequal length,
+#then the elements of the shorter vector are recycled to complete the operationss,
+
+v1<- c(3,8,4,5,0,11)
+v2<- c(4,11)
+
+#v2 becomes c(4,11,4,11,4,11)
+
+add.result <- v1+v2
+print(add.result)
+
+
+#vector element sorting
+#element in a vector can be sorted using the sort ()function 
+
+v <- c(3,8,4,5,0,11, -9, 304)
+#sort the element of the vector 
+sort.result <-sort(v)
+print(sort.result)
+
+#sort the element in the reverse order
+revsort.result <-sort(v, decreasing = TRUE)
+print(revsort.result)
+
+#sorting character vectors
+v <- c("RED","BLUE", "YELLOW", "VIOLET")
+sort.result <- sort(v)
+print(sort.result)
+
+#sorting character vecors  in reverse order
+revsort.result <-sort(v, decreasing = TRUE)
+print(revsort.result)
+
+##lists are the R objects which contain elements of different types 
+# like??? numbers, string, vectors and another list inside it.
+#create a list containning strings , numbers, vectors and a logical values.
+
+list_data <- list("RED","BLUE", c(21,32,11), TRUE, 51.23,119.1)
+print(list_data)
+
+#Naming list elements
+#create a list containing a vector a matrix and alist 
+
+list_data <- list (c("jan", "feb", "mar"), matrix(c(3,9,5,1,-2,8) ,nrow =2), list("green", 12.3))
+list_data
+
+#Give names to the element in the list 
+names(list_data)<- c("1st Quarter", "A_matrix", "A inner list")
+
+### Accessing list element ###########
+print(list_data[1])
+list_data $ A_matrix
+list_data $'A inner list'
+print(list_data $ '1st quarter'[1])
+
+##Access the third element AS it is also a list and its element will be
+print(list_data[3])
+
+#Access the list element using the name of the element
+print(list_data $ A_matrix[3])
+
+#converting list into vector
+#A list can be converted tto a vector so that the element of the vector.
+#can be used for further manipulation .All the artthmetic operattion on 
+# vectors can be applied after the list is converted into vectors.
+#To do this conversion , we use the unlist() finction. It takes the list.
+#As input & produces a vector
+#create lists.
+list1 <-list(1:5)
+print(list1)
+
+list2 <-list(10:14)
+print(list2)
+
+list1 +list2
+#convert the list to vectors .
+v1 <- unlist(list1)    #unlist is used for convert the list into vectors
+v2 <- unlist(list2)
+print(v1)
+print(v2)
+
+#Now add the vectors 
+result <- v1+v2
+print(result)
+
+
+B = matrix(c(2,4,3,1,5,7) ,nrow =6, ncol=1)
+B
+
+C = matrix(c(2,4,3,1,5,7) ,nrow =3, ncol=4)
+C
+
+D = matrix(c(2,4,3,1,5,7) ,nrow =3, ncol=2)
+D
+
+E = matrix(c(2,4,3,1,5,7) ,nrow =2, ncol=3)
+E
+
+#generating 15 random no. from a normal distribution
+rnorm(15)
+
+#assignments
+x <-2
+x
+x+x
+
+#vectorised arithmetic : A data vector is simply an array
+#of numbers and avector variable can be constructed like this.
+ weight <-c(60,72,57,90,95,72)
+ weight
+ 
+ height <- c(1.75, 1.80, 1.65, 1.90, 1.74,1.91)
+ height
+ 
+ bmi <-weight /height^2
+ bmi
+??bmi
+#calculate  the mean x ? =??? xi/n:
+ sum(weight)
+ sum(weight/length(weight))
+ 
+ #then save the mean in avariable x bar and proceed with the calculation
+ #of sd =p(??? (xi ???x?) ^2) / (n???1)
+ #we do this in steps to see the componemnts yhe deviation from mean are 
+ 
+ xbar <-sum(weight)/length(weight)
+ weight <-xbar
+ xbar
+ weight
+ #Notice how xbar which has length 1, i recycled and subtracted from the  wil
+#each element of weight the squared deviation will be
+ 
+(weight -xbar) ^2
+ 
+ #The sum of sqaured deviation is similarly obtained with 
+sum((weight -xbar)^2)
+ 
+ #and all the standard deviation becomes .
+ 
+sqrt(sum(weight-xbar)^2)/(length(weight -1))
+mean(weight)
+ 
+ #Graphics
+ #relation between weight and height
+plot(height , weight)
+                           
+#changing the plotting symbol using the keyword PCH("Plottinng character")
+plot(height, weight,pch=5)
+
+########################################
+x <-list("a","b","c",1:5,"d","e")
+x
+x[2]
+x[-2]  #without second list
+x[-c(2,3,5)]   #without 2nd, 3rd and 5th element 
+str(x)
+x[4]
+x[[4]][3]
+x[[4]][1:3]
+   
+
+############FUNCTIONS######
+#R Function is created by using the keyword function The basic syntax
+#function name <-function(arg_1 ,arg_2,-----){
+#function body }
+
+#user defined body
+a <-c(3, 8,4,5,0,11)
+#create a function to print squares of number in sequence.
+new.function <- function(a){
+   for (i in a){
+     b <-i^2
+     print(b)
+   }
+}
+new.function(a)
+
+###############calling a function##########
+new.function <- function(a)
+{
+  for (i in 10:a)
+  {
+    b <-i^2
+    print(b)    #print value above value & squares
+  }
+}
+new.function(16)
+
+###################calling a function without an argument#################
+new.function <- function(){
+  for(i in 1:15)
+  {
+    print(i^2)
+  }
+}
+new.function()
+
+######calling a function with argument values(by position and by name)
+new.function <- function(a,b,c){
+  result <-a*b+c
+  print(result)
+}
+#call the functoion by position of arguments
+new.function(5,3,11)
+
+###call the function by names of arguments
+new.function(a=11, b=5, c=3)
+
+###calling a function by default argument########
+new.function <- function(a=3,b=6){
+  result <-a*b
+  print(result)
+}
+new.function()
+
+###calling the function with giving new values of the argument 
+new.function(9,5)
+
